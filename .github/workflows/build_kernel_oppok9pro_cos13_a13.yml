@@ -102,6 +102,7 @@ jobs:
           mv $GITHUB_WORKSPACE/Patches /tmp/
 
       - name: Maximize build space
+        if: ${{ false }}
         uses: easimon/maximize-build-space@master
         with:
           root-reserve-mb: 8192
